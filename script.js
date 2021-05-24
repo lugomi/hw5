@@ -21,29 +21,20 @@ function anotherOne() {
     var alfy = window.open("https://www.instagram.com/pooh.jitsu/");
 }
 
-// for the POST form
+// // for the POST form
 document.getElementById('oss').addEventListener('click', function(event){
     let req = new XMLHttpRequest();
-
-    let payload = {
-        name:null,
-        belt:null,
-        school:null
-    }
-    
-    // data entered by the user
+    let payload = {name:null, belt:null, school:null};
     payload.name = document.getElementById('name').value;
     payload.belt = document.getElementById('belt').value;
     payload.school = document.getElementById('school').value;
 
-
-
     req.open('POST', 'http://httpbin.org/post', true);
-    req.setRequestHeader('Content-type', 'application/json');
+    req.setRequestHeader('Content-tyoe', 'application/json');
     req.addEventListener('load', function(){
         if (req.status >= 200 && req.status < 400){
             let response = JSON.parse(req.responseText);
-            document.getElementById('userData').textContent = JSON.parse(response.data).spam;
+            alert(`Welcome ${document.getElementById('name').value}!`)
         } else {
             alert('The following error has occured: ' + req.statusText);
         }
@@ -51,24 +42,3 @@ document.getElementById('oss').addEventListener('click', function(event){
     req.send(JSON.stringify(payload));
     event.preventDefault();
 });
-
-// about-me page
-function myResume() {
-    var resume = window.open()
-}
-
-
-
-
-
-// // post request for form
-// function postReq() {
-//     document.getElementById('rank-and-school').addEventListener('click', function(event){
-//         let req = new XMLHttpRequest();
-
-//         // data entered by the user
-//         let name = document.forms['name'].value;
-//         let belt = document.forms['belt'].value;
-//         let school = document.forms['school'].value;
-//     })
-// }
