@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Dojo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- make a menu with these links  on all other pages-->
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about-me.html">About Me</a>
+            <a href="jits.html">Step On The Mats</a>
+            <a href="upcoming-events.html">Upcoming Events</a>
+        </div>
+        <h1 class="page-header">Welcome to my cyber dojo!</h1>
+        <h2 class="page-header">Check out this tech from my buddy Chris Crawford!</h2>
+        <div class="squirrel">
+            <iframe width="860" height="515" src="https://www.youtube.com/embed/lVFR1gjJCs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="vid-info">
+                <p>
+                    Check out this video from the my great friend Alfy, who was fortunate enough to train with my homie from Florida, Chris 'Squirrel'
+                    Crawford.  
+                    <br>
+                    Squirrel, is a young brown belt under the 10th Planet System. He originally started his BJJ journey in Jacksonville, FL and now 
+                    currently resides in Tampa, FL where he teaches and trains out of Kaizen MMA Tampa.  This year alone has been a very active year
+                    for Chris, which has resulted in him even being featured on UFC Fight Pass for Combat Jiu-Jitsu Worlds, where he won his match
+                    in overtime.
+                    <br>
+                </p>
+                <button onclick="openUp()">Follow Chris on instagram!</button>
+                <button onclick="anotherOne()">Follow Alfy too!</button>
+            </div>
+        </div>
+        <br>
+        <h3 style="text-align: center;">While I have you here....</h3>
+        <div class="about-you">
+            <form id="about">
+                <label for="name"><b>What's your name?</b></label><br>
+                <input type="text" id="name" name="name" placeholder="Renato Laranja"><br>
+                <label for="belt"><b>What belt are you?</b></label><br>
+                <input type="text" id="belt" name="belt" placeholder="wht, blu, purp, brwn, blk"><br>
+                <label for="school"><b>What school do you train at?/What team are you on?</b></label><br>
+                <input type="text" id="school" name="school" placeholder="10th Planet, ATT, etc."><br>
+                <button class="submit" type="submit" id="post-req">OSS!</button><br>
+            </form>
+        </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
