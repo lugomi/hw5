@@ -43,7 +43,10 @@ body {
     object-fit: cover;
 }
 
-/* need to have the button not shift up when hover */
+.sources {
+    text-align: center;
+}
+
 .carousel-button a:hover {
     background-color: pink;
     background-size: 50%;
@@ -73,6 +76,14 @@ body {
     border: solid;
     margin-right: 75%;
     text-align: center;
+}
+
+.event-posters {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 100px;
+    overflow: scroll;
+
 }
 
 /* jits page */
