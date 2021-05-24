@@ -1,13 +1,13 @@
-$('#rank-and-school').on('submit', function(e){
-    e.preventDefault();
-    $.ajax({
-       type: "POST",
-       url: "/postinfo.php",
-       data: $(this).serialize(),
-       success: function() {
-         alert('success');
-       }
-    });
+// $('#rank-and-school').on('submit', function(e){
+//     e.preventDefault();
+//     $.ajax({
+//        type: "POST",
+//        url: "/postinfo.php",
+//        data: $(this).serialize(),
+//        success: function() {
+//          alert('success');
+//        }
+//     });
 });
 
 
